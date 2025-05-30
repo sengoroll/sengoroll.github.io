@@ -1,0 +1,54 @@
+/* General body styling to mimic LaTeX */
+body {
+    font-family: 'Computer Modern Serif', serif; /* Using a common LaTeX font, with serif as fallback */
+    line-height: 1.6;
+    margin: 0 auto; /* Center the content */
+    max-width: 800px; /* Typical width for a text document */
+    padding: 20px;
+    background-color: #fdfdfd; /* Slightly off-white background */
+    color: #333; /* Standard text color */
+}
+
+/* Container for the main content */
+.container {
+    margin-top: 30px;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Computer Modern Serif', serif;
+    font-weight: normal; /* LaTeX titles are often not bold */
+    font-size: 2.5em; /* Prominent title */
+    text-align: center;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #ccc; /* A subtle line under the main title */
+    padding-bottom: 0.3em;
+}
+
+/* Paragraph styling */
+p {
+    text-align: justify; /* Justified text is common in LaTeX */
+    margin-bottom: 1em;
+}
+
+/* Link styling */
+a {
+    color: #0056b3; /* A standard link blue */
+    text-decoration: none; /* LaTeX links are often not underlined by default */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Optional: If you want to mimic the 'article' document class look more closely */
+/* You might add more specific styling for sections, abstract, etc. */
+
+/* Fallback font if Computer Modern is not available */
+@font-face {
+  font-family: 'Computer Modern Serif';
+  src: url('https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts/cmunrm.woff2') format('woff2'),
+       url('https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts/cmunrm.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
